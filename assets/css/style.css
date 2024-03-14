@@ -260,12 +260,21 @@
     padding-right: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
+    border: 2px solid var(--black_color);
 }
 
 .adjust {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.text_stroke {
+    cursor: pointer;
+}
+
+.text_stroke:hover {
+    -webkit-text-stroke: medium;
 }
 
 .outline {
@@ -312,10 +321,43 @@ p {
     transform: translateY(-10px);
 }
 
+.connect:hover {
+    background-color: var(--white-color);
+    color: var(--black_color);
+}
+
 .cursor {
     cursor: pointer;
+}
+
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 /* .pb-206 {
     padding-bottom: 206px;
 } */
+
+.change {
+    --bs-gutter-x: 0 !important;
+}
+
+.py-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.py-13 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.w_h_adjust {
+    max-width: 327px;
+    min-height: 163px;
+}
+
+.hover_effect:hover path {
+    stroke: var(--navbar_btn_color);
+}
