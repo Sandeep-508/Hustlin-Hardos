@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+:root {
+    /* colors */
+    --navbar_btn_color: #FFD600;
+    --minting-countDown-color: #FF0000;
+    --our_team: #D1C9C2;
+    --back_color: #F9F4E5;
+    --white-color: #FFFFFF;
+    --black_color: #000000;
+    --our_team_text_color_1: #70675F;
+    --our_team_text_color_2: #A59A90;
+
+    /* font-family */
+    --fm_noto: "Noto Serif", serif;
+
+    /* style */
+
+    --font-style: italic;
+
+    /* font weight */
+    --fw-400: 400;
+    --fw-300: 300;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    /* font-size */
+    --fs-16: 16px;
+    --fs-14: 14px;
+    --fs-64: 64px;
+    --fs-18: 18px;
+    --fs-70: 70px;
+    --fs-24: 24px;
+    --fs-36: 36px;
+    --fs-20: 20px;
+    --fs-40: 40px;
+    --fs-80: 80px;
+    --fs-48: 48px;
+    --fs-72: 72px;
+    --fs-100: 100px;
+    --fs-157: 157px;
+
+
+    /* lh */
+    --lh-54: 54px;
+    --lh-19: 19px;
+    --lh-30: 30px;
+    --lh-32: 32px;
+    --lh-26: 26px;
+    --lh-20: 20px;
+    --lh-21: 21px;
+    --lh-72: 72px;
+    --lh-96: 96px;
+    --lh-39: 39px;
+    --lh-36: 36px;
+    --lh-27: 27px;
+    --lh-83: 83px;
+    --lh-100: 100px;
+    --lh-28: 28px;
+    --lh-188: 188px;
+}
+
+.fm_noto {
+    font-family: var(--fm_noto);
+}
+
+.font-style {
+    font-style: var(--font-style);
+}
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+.fw-300 {
+    font-weight: var(--fw-300);
+}
+
+.fw-500 {
+    font-weight: var(--fw-500);
+}
+
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+.fs-14 {
+    font-size: var(--fs-14);
+}
+
+.fs-64 {
+    font-size: var(--fs-64);
+}
+
+.fs-80 {
+    font-size: var(--fs-80);
+}
+
+.fs-18 {
+    font-size: var(--fs-18);
+}
+
+.fs-70 {
+    font-size: var(--fs-70);
+}
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+.fs-36 {
+    font-size: var(--fs-36);
+}
+
+.fs-20 {
+    font-size: var(--fs-20);
+}
+
+.fs-48 {
+    font-size: var(--fs-48);
+}
+
+.fs-40 {
+    font-size: var(--fs-40);
+}
+
+.fs-72 {
+    font-size: var(--fs-72);
+}
+
+.fs-100 {
+    font-size: var(--fs-100);
+}
+
+.fs-157 {
+    font-size: var(--fs-157);
+}
+
+.lh-54 {
+    line-height: var(--lh-54);
+}
+
+.lh-90 {
+    line-height: var(--lh-90);
+}
+
+.lh-30 {
+    line-height: var(--lh-30);
+}
+
+.lh-32 {
+    line-height: var(--lh-32);
+}
+
+.lh-21 {
+    line-height: var(--lh-21);
+}
+
+.lh-20 {
+    line-height: var(--lh-20);
+}
+
+.lh-39 {
+    line-height: var(--lh-39);
+}
+
+.lh-72 {
+    line-height: var(--lh-72);
+}
+
+.lh-36 {
+    line-height: var(--lh-36);
+}
+
+.lh-96 {
+    line-height: var(--lh-96);
+}
+
+.lh-27 {
+    line-height: var(--lh-27);
+}
+
+.lh-83 {
+    line-height: var(--lh-83);
+}
+
+.lh-100 {
+    line-height: var(--lh-100);
+}
+
+.lh-28 {
+    line-height: var(--lh-28);
+}
+
+.lh-188 {
+    line-height: var(--lh-188);
+}
+
+.navbar_btn_color {
+    background-color: var(--navbar_btn_color);
+}
+
+.minting-countDown-color {
+    color: var(--minting-countDown-color);
+}
+
+.our_team {
+    background-color: var(--our_team);
+}
+
+.back_color {
+    background-color: var(--back_color);
+}
+
+.white-color {
+    background-color: var(--white-color);
+}
+
+.black_color {
+    background-color: var(--black_color);
+}
+
+.text_black_color {
+    color: var(--black_color);
+}
+
+.our_team_text_color_1 {
+    color: var(--our_team_text_color_1);
+}
+
+.our_team_text_color_2 {
+    color: var(--our_team_text_color_2);
+}
