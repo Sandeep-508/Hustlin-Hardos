@@ -33,6 +33,13 @@ setInterval(update, 1);
 
 
 let accord_items = document.querySelectorAll(".accord_items");
+let accord_item = document.querySelector(".accord_items");
+let text = document.querySelector(".text_to_disp");
+let svg_show = document.querySelector(".svg_to_change");
+text.style.display = "block";
+svg_show.innerHTML = `<svg width="11" height="4" viewBox="0 0 11 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.9 3.864V0.516H10.26V3.864H0.9Z" fill="black"/>
+</svg>`;
 
 accord_items.forEach(element => {
     let text_disp = element.querySelector(".text_to_disp");
