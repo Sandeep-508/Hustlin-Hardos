@@ -274,7 +274,10 @@ body {
 }
 
 .back_color {
-    background-color: var(--back_color);
+    background-image: url(../images/png/25th\ Feb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .white-color {
@@ -428,7 +431,9 @@ p {
     border: 1px solid var(--black_color);
 }
 
-
+.effect:active {
+    transform: scale(0.9);
+}
 
 .add {
     padding-top: 13px;
@@ -437,7 +442,6 @@ p {
 
 .add:active {
     background-color: var(--navbar_btn_color);
-    transform: scale(0.9);
 }
 
 .sub {
@@ -445,9 +449,26 @@ p {
     padding-bottom: 12px;
 }
 
+.btn-primary {
+    --bs-btn-color: none;
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: none;
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-active-color: none;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
+}
+
 .sub:active {
     background-color: var(--navbar_btn_color);
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
 }
 
 .pb-37 {
@@ -462,7 +483,9 @@ p {
     gap: 116px;
 }
 
-
+.offcanvas {
+    background-color: var(--back_color);
+}
 
 /* timeline */
 
@@ -470,7 +493,7 @@ p {
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -489,11 +512,15 @@ p {
 
 /* Container around content */
 .containers {
-    padding: 10px 40px;
+    padding: 0px 10px;
     position: relative;
     background-color: inherit;
     width: 50%;
 }
+
+/* .w_change {
+    width: 60%;
+} */
 
 /* The circles on the timeline */
 .containers::after {
@@ -534,7 +561,8 @@ p {
 
 /* The actual content */
 .content {
-    padding: 20px 30px;
+    margin-left: 20px;
+    padding: 30px 20px;
     position: relative;
     border-radius: 6px;
 }
@@ -570,6 +598,7 @@ p {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
+        padding-top: 20px;
     }
 
     .fs_14 {
@@ -605,13 +634,17 @@ p {
     padding-top: 100px;
 }
 
-.pb-700 {
-    padding-bottom: 700px;
+.pb-577 {
+    padding-bottom: 577px;
 }
 
 .w_h {
     width: 30px;
     height: 30px;
+}
+
+.outline_nav_item {
+    outline: 2px solid black;
 }
 
 /* downside arrow in svg */
@@ -626,18 +659,44 @@ p {
 
 .text_color {
     color: #A59A90;
-}
+    text-shadow: -1px -1px 1px #0000004D inset;
 
-.pe-118 {
-    padding-right: 118px;
+    text-shadow: 1px 1px 1px #FFFFFF inset;
 }
 
 .d_none {
     display: none;
 }
 
+.-mt-6px {
+    margin-top: -6px;
+}
 
+.svg_to_change {
+    min-height: 24px;
+}
 
+.mt-1px {
+    margin-top: 1px;
+}
+
+.mt-2px {
+    margin-top: 2px;
+}
+
+.mt-half_px {
+    margin-top: 1.5px;
+}
+
+/* the slides
+.slick-slide {
+    margin: 0 1.5px;
+}
+
+/* the parent */
+/* .slick-list {
+    margin: 0 -1.5px;
+}  */
 
 /* Media queries */
 
@@ -673,12 +732,66 @@ p {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
     .fs_lh_max_md_32 {
         font-size: var(--fs-32);
         line-height: var(--lh-39);
     }
+
+
+
+    /* label[for="menuicon"] {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        right: 0;
+        z-index: 100;
+    }
+
+    label[for="menuicon"] span {
+        background-color: black;
+        width: 100%;
+        height: 3px;
+    }
+
+    .lg_view {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: var(--back_color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 0;
+        left: -100%;
+        z-index: 5;
+    }
+
+    .prop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type="checkbox"]:checked~.lg_view {
+        left: 0;
+
+        .body {
+            overflow: hidden;
+        }
+    } */
+
+    /* .outline_nav_item {
+        outline: none;
+    } */
 }
+
 
 @media (max-width: 576px) {
     .max_sm_change {
@@ -694,10 +807,29 @@ p {
     .fs_sm_14 {
         font-size: var(--fs-14);
     }
+
+    .fs_sm_16 {
+        font-size: var(--fs-20);
+    }
+
+    .d_max_sm_none {
+        display: none;
+    }
+
 }
 
 @media (min-width: 992px) {
     .pr-107 {
         padding-right: 107px;
+    }
+
+    .pe-118 {
+        padding-right: 118px;
+    }
+}
+
+@media (min-width: 576.9px) {
+    .d_sm_none_max {
+        display: none !important;
     }
 }
