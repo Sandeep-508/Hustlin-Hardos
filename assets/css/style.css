@@ -739,6 +739,15 @@ p {
     border-top: 2px solid var(--black_color);
 }
 
+.adjustment_pos {
+    bottom: 20px;
+    right: 20px;
+}
+
+.read:hover {
+    color: var(--minting-countDown-color);
+}
+
 @media (min-width: 1024.9px) {
     .adjust {
         position: absolute;
