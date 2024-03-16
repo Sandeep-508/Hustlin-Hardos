@@ -689,12 +689,11 @@ p {
     background-size: cover;
 }
 
-.text_color {
-    color: #A59A90;
-    text-shadow: -1px -1px 1px #0000004D inset;
-
-    text-shadow: 1px 1px 1px #FFFFFF inset;
-}
+/* .text_color {
+    color: transparent;
+    background-color: white;
+    text-shadow: 0 2px 2px #A59A90;
+} */
 
 .d_none {
     display: none;
