@@ -365,8 +365,9 @@ p {
 }
 
 .title_text_news {
-    text-shadow: inset 2px 2px 1px #FFFFFF52;
-    text-shadow: 2px 2px 4px #00000040;
+    color: transparent;
+    background-color: #6e5d5d;
+    text-shadow: 0px 2px 3px #000000;
 }
 
 .title_text_heading {
@@ -741,10 +742,12 @@ p {
 
 .w_h_changes:hover {
     background-color: transparent;
+    border: 2px solid var(--black_color);
 }
 
 .adjustment_pos:hover div svg path {
     fill: var(--minting-countDown-color);
+    stroke: #000000;
 }
 
 .scroll_to_top {
@@ -755,7 +758,6 @@ p {
     width: 70px;
     height: 70px;
     border-radius: 10px;
-    border: 2px solid var(--minting-countDown-color);
     background-color: var(--minting-countDown-color);
 }
 
