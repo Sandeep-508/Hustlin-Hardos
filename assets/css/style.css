@@ -752,7 +752,7 @@ p {
 }
 
 .loading_screen {
-    background-color: var(--back_color);
+    background-color: var(--black_color);
     width: 100%;
     height: 100%;
     z-index: 10;
@@ -770,7 +770,7 @@ p {
 
 /* loading screen */
 .svg_earth {
-    width: 200px;
+    width: 300px;
 }
 
 /* second */
@@ -835,6 +835,10 @@ p {
         font-size: var(--fs-45);
         line-height: var(--lh-49);
     }
+
+    .svg_earth {
+        width: 200px;
+    }
 }
 
 @media (max-width: 767.9px) {
@@ -842,8 +846,6 @@ p {
         font-size: var(--fs-32);
         line-height: var(--lh-39);
     }
-
-
 
     /* label[for="menuicon"] {
         width: 30px;
@@ -919,6 +921,10 @@ p {
 
     .d_max_sm_none {
         display: none;
+    }
+
+    .svg_earth {
+        width: 100px;
     }
 }
 

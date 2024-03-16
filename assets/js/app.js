@@ -95,28 +95,3 @@ let loading = document.querySelector(".loading_screen");
 setInterval(() => {
     loading.classList.add("show");
 }, 4000);
-
-let isLoading = false;
-
-const path = document.querySelector(".path");
-const loading_svg = document.querySelector(".loading");
-
-
-setTimeout(() => {
-    document.documentElement.style.setProperty("--stroke-dasharray", "0");
-    loading_svg.animate({
-        background: "transparent",
-    }, {
-        fill: "forwards",
-        duration: 2000,
-        iterations: 1,
-    })
-
-    path.animate({
-        stroke: "transparent",
-    }, {
-        fill: "forwards",
-        duration: 200,
-        iterations: 1,
-    })
-}, 5000);
