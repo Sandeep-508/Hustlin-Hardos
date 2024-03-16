@@ -674,9 +674,6 @@ p {
     outline: 2px solid black;
 }
 
-/* downside arrow in svg */
-
-
 .back_clr {
     background-image: url(../images/png/slider_back_img.png);
     background-position: center;
@@ -714,16 +711,6 @@ p {
 .mt-half_px {
     margin-top: 1.5px;
 }
-
-/* the slides
-.slick-slide {
-    margin: 0 1.5px;
-}
-
-/* the parent */
-/* .slick-list {
-    margin: 0 -1.5px;
-}  */
 
 /* Media queries */
 .border_btm {
@@ -764,9 +751,32 @@ p {
     background-color: var(--minting-countDown-color);
 }
 
+.loading_screen {
+    background-color: var(--back_color);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.show {
+    top: -100%;
+}
+
 .read:hover {
     color: var(--minting-countDown-color);
 }
+
+/* loading screen */
+.svg_earth {
+    width: 200px;
+}
+
+/* second */
+
+
+/* end of the loading screen code */
 
 @media (min-width: 1024.9px) {
     .adjust {
@@ -774,6 +784,17 @@ p {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .timeline .w_change .content {
+        transform: translatex(0px) translatey(0px);
+        top: -15px;
+        left: 15px;
+    }
+
+    /* Content Division */
+    .timeline .w_change:nth-child(1) .content {
+        transform: translatex(0px) translatey(0px);
     }
 
     /* changes in position to make it look same like in the project */

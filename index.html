@@ -18,6 +18,38 @@
 </head>
 
 <body class="body">
+    <section class="position-fixed loading_screen d-flex flex-column align-items-center justify-content-center">
+        <div>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="svg_earth"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                enable-background="new 0 0 100 100" xml:space="preserve">
+                <rect fill="#000" width="3" height="100" transform="translate(0) rotate(180 3 50)">
+                    <animate attributeName="height" attributeType="XML" dur="1s" values="30; 100; 30"
+                        repeatCount="indefinite" />
+                </rect>
+                <rect x="17" fill="#000" width="3" height="100" transform="translate(0) rotate(180 20 50)">
+                    <animate attributeName="height" attributeType="XML" dur="1s" values="30; 100; 30"
+                        repeatCount="indefinite" begin="0.1s" />
+                </rect>
+                <rect x="40" fill="#000" width="3" height="100" transform="translate(0) rotate(180 40 50)">
+                    <animate attributeName="height" attributeType="XML" dur="1s" values="30; 100; 30"
+                        repeatCount="indefinite" begin="0.3s" />
+                </rect>
+                <rect x="60" fill="#000" width="3" height="100" transform="translate(0) rotate(180 58 50)">
+                    <animate attributeName="height" attributeType="XML" dur="1s" values="30; 100; 30"
+                        repeatCount="indefinite" begin="0.5s" />
+                </rect>
+                <rect x="80" fill="#000" width="3" height="100" transform="translate(0) rotate(180 76 50)">
+                    <animate attributeName="height" attributeType="XML" dur="1s" values="30; 100; 30"
+                        repeatCount="indefinite" begin="0.1s" />
+                </rect>
+            </svg>
+        </div>
+        <div>
+            <p class="fm_modern fw-400 fs-157 lh-188">Loading...</p>
+        </div>
+    </section>
+
     <marquee behavior="scroll" class="bg-black" style="width: 100%;" loop="-1">
         <div class="d-flex gap-62">
             <div class="d-flex align-items-center gap-2 py-3">
@@ -971,7 +1003,8 @@
 
         <section class="position-fixed adjustment_pos scroll_to_top">
             <div class="w_h_changes d-flex align-items-center justify-content-center shadow">
-                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="scroll">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="scroll">
                     <path
                         d="M19.0835 17.0007V33.6673H14.9168V17.0007H0.333496L17.0002 0.333984L33.6668 17.0007H19.0835Z"
                         fill="white" />
