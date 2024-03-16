@@ -899,6 +899,14 @@ p {
     } */
 }
 
+@media (min-width:1025px) {
+
+    /* Content Division */
+    .timeline .w_change .content {
+        padding-left: 0px;
+    }
+
+}
 
 @media (max-width: 576px) {
     .max_sm_change {
