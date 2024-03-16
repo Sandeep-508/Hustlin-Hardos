@@ -742,6 +742,26 @@ p {
 .adjustment_pos {
     bottom: 20px;
     right: 20px;
+    cursor: pointer;
+}
+
+.w_h_changes:hover {
+    background-color: transparent;
+}
+
+.adjustment_pos:hover div svg path {
+    fill: var(--minting-countDown-color);
+}
+
+.scroll_to_top {
+    display: none;
+}
+
+.w_h_changes {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--minting-countDown-color);
 }
 
 .read:hover {

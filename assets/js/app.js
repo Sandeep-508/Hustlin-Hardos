@@ -72,3 +72,21 @@ accord_items.forEach(element => {
         }
     });
 });
+
+let scroll = document.querySelector(".scroll_to_top");
+let scrollPt = 200;
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > scrollPt) {
+        scroll.style.display = "block";
+    } else {
+        scroll.style.display = "none";
+    }
+
+    scroll.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        })
+    });
+});
