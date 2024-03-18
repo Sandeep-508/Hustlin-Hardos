@@ -988,6 +988,10 @@ p {
     .svg_earth {
         width: 100px;
     }
+
+    .sm_hidden {
+        display: none !important;
+    }
 }
 
 @media (min-width: 992px) {
