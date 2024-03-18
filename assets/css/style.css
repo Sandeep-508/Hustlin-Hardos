@@ -41,6 +41,7 @@ body {
     --black_color: #000000;
     --our_team_text_color_1: #70675F;
     --our_team_text_color_2: #A59A90;
+    --time-left: #00A106;
 
     /* font-family */
     --fm_noto: "Noto Serif", serif;
@@ -111,6 +112,10 @@ body {
 
 .font-style {
     font-style: var(--font-style);
+}
+
+.time-left-color {
+    color: var(--time-left);
 }
 
 .fw-400 {
