@@ -10,17 +10,23 @@ sub.addEventListener("click", () => {
     var_num.innerHTML = --i;
 });
 
+let remainingTime = 40 * 60 * 60 * 1000; // 40 hours in milliseconds
+
 function update() {
     let time = document.querySelector(".time");
 
-    let date = new Date();
+    remainingTime -= 1; // Decrease remaining time by 1 millisecond
 
-    let hour = date.getHours();
-    let mins = date.getMinutes();
-    let sec = date.getSeconds();
-    let milsec = date.getMilliseconds();
+    if (remainingTime < 0) {
+        remainingTime = 40 * 60 * 60 * 1000; // Reset remaining time to 40 hours when it reaches 0
+    }
 
-    let timeString = `${hour}:${mins}:${sec}:${milsec}`;
+    let hours = Math.floor(remainingTime / (1000 * 60 * 60));
+    let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+    let milliseconds = remainingTime % 1000;
+
+    let timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}:${milliseconds.toString().padStart(3, '0')}`;
 
     time.innerHTML = timeString;
 }
@@ -28,6 +34,9 @@ function update() {
 update();
 
 setInterval(update, 1);
+
+
+
 
 // Accordion
 
