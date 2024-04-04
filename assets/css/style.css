@@ -17,12 +17,6 @@
     src: url(../Font/modernofbcomp-semibold.otf);
 }
 
-/* 
-a {
-    list-style: none !important;
-    text-decoration: none !important;
-} */
-
 body {
     overflow-x: hidden;
 }
@@ -57,46 +51,75 @@ body {
     --fw-300: 300;
     --fw-500: 500;
     --fw-600: 600;
+    --fw-800: 800;
     --fw-700: 700;
     --fw-900: 900;
 
     /* font-size */
-    --fs-16: 16px;
+    --fs-10: 10px;
     --fs-14: 14px;
-    --fs-64: 64px;
+    --fs-15: 15px;
+    --fs-16: 16px;
     --fs-18: 18px;
-    --fs-45: 45px;
-    --fs-54: 54px;
-    --fs-70: 70px;
-    --fs-24: 24px;
-    --fs-36: 36px;
     --fs-20: 20px;
-    --fs-40: 40px;
+    --fs-21: 21px;
+    --fs-23: 23px;
+    --fs-24: 24px;
+    --fs-25: 25px;
+    --fs-28: 28px;
+    --fs-30: 30px;
     --fs-32: 32px;
-    --fs-80: 80px;
+    --fs-36: 36px;
+    --fs-40: 40px;
+    --fs-45: 45px;
     --fs-48: 48px;
+    --fs-50: 50px;
+    --fs-54: 54px;
+    --fs-61: 61px;
+    --fs-64: 64px;
+    --fs-70: 70px;
     --fs-72: 72px;
+    --fs-80: 80px;
     --fs-100: 100px;
     --fs-157: 157px;
 
 
     /* lh */
-    --lh-54: 54px;
-    --lh-49: 49px;
+    --lh-16: 16px;
+    --lh-18: 18px;
     --lh-19: 19px;
-    --lh-30: 30px;
-    --lh-32: 32px;
-    --lh-26: 26px;
+    --lh-24: 24px;
     --lh-20: 20px;
     --lh-21: 21px;
-    --lh-72: 72px;
-    --lh-96: 96px;
-    --lh-39: 39px;
-    --lh-36: 36px;
+    --lh-23: 23px;
+    --lh-26: 26px;
     --lh-27: 27px;
-    --lh-83: 83px;
-    --lh-100: 100px;
     --lh-28: 28px;
+    --lh-29: 29px;
+    --lh-30: 30px;
+    --lh-32: 32px;
+    --lh-35: 35px;
+    --lh-36: 36px;
+    --lh-38: 38px;
+    --lh-39: 39px;
+    --lh-40: 40px;
+    --lh-41: 41px;
+    --lh-42: 42px;
+    --lh-45: 45px;
+    --lh-46: 46px;
+    --lh-49: 49px;
+    --lh-54: 54px;
+    --lh-56: 56px;
+    --lh-60: 60px;
+    --lh-62: 62px;
+    --lh-68: 68px;
+    --lh-71: 71px;
+    --lh-72: 72px;
+    --lh-75: 75px;
+    --lh-83: 83px;
+    --lh-86: 86px;
+    --lh-96: 96px;
+    --lh-100: 100px;
     --lh-188: 188px;
 }
 
